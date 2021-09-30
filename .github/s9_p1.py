@@ -14,8 +14,9 @@ class Car():
         print('noor bala')
     def gaz(self):
         self.curent_speed += 20
-        if self.curent_speed == 120:
-           return 'bishtar nmire'
+        print(f'soraat man {self.curent_speed} ast')
 
 mybmw = Car('bmw', 'm8',1.5,'black',0)
-mybmw.curent_speed()
+mybmw.gaz()
+mybmw.gaz()
+
