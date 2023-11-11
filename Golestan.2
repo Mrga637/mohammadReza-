@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+   cout <<"this programm will give you your final income after calculating the taxfee.\n";
+   int inc1;
+   cout<<"How much is your income? ";
+   cin >> inc1;
+   if (inc1 <= 150000)
+     cout<< "your final income is:"<< inc1;
+        else if (inc1 >150000 and inc1 <=230000){
+         inc1=  inc1 *0.9 ;
+         cout<< "your final income is:"<< inc1;}
+            else if  (inc1 >230000 and inc1 <=280000){
+              inc1 = 0.88 * inc1;
+              cout<< "your final income is:"<< inc1;}
+              else if (inc1 <=380000 and inc1>280000){
+                 inc1 = 0.85 * inc1;
+                 cout << "your final income is:"<<inc1;}
+                     else if (inc1 >380000){
+                     inc1 = 0.8* inc1;
+                     cout<< "your final income is:"<< inc1;}
+   
+   return 0;
+}
