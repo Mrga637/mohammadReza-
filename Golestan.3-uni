@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   int r1,num1;
+   cout<<"**Please only type numbers**\n";
+   for(int i=0;i<10;i++){/*Grtting 10 numbers*/
+     cout<<"\nenter number: ";
+     cin>>num1;
+     r1 = num1 %2;
+     switch (r1)
+     {
+     case 1:
+      cout<<"It's an odd number";
+      break;
+     case 0:
+      cout<<"It's an even number";
+      break;
+     }
+   }
+    return 0;
+    }
+    
+
