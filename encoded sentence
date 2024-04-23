@@ -1,0 +1,29 @@
+def encode_(sentence):
+    encoded = ""
+    i = 0
+
+    while i < len(sentence):
+        count = 1
+        while i + 1 < len(sentence) and sentence[i] == sentence[i+1]:
+            i += 1
+            count += 1
+        encoded += str(count) + sentence[i]
+        i += 1
+
+    return encoded
+
+user = input("write your words\n")
+print(encode_(user))
+def decode_(encoded):
+    decoded = ""
+    num = ""
+    for char in encoded:
+        if char.isdigit():
+            num += char
+        else:
+            decoded += char * int(num)
+            num = ""
+    return decoded
+
+# emtehan kardan function
+print(decode_(encode_(user)))
